@@ -1,1 +1,1 @@
-echo Hello gkopoin
+echo Hello gkopoin!

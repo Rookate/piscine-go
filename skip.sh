@@ -1,0 +1,1 @@
+find . | sed -n 'p;n' | wc -l

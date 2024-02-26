@@ -1,3 +1,3 @@
-printf "Chamelon\n"
+printf "Chameleon\n"
 printf "28\n"
 printf "Male"

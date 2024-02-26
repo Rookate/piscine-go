@@ -1,1 +1,1 @@
-ls -1 | sed -n 'p;n'
+find . -maxdepth 1 -type f | sed -n 'p;n' | wc -l

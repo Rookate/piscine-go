@@ -1,1 +1,1 @@
-printf "Chameleon\n 28\n Male"
+printf "Chameleon\n28\nMale"

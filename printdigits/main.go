@@ -1,13 +1,13 @@
 package main
 
 import (
-        "github.com/01-edu/z01"
+	"github.com/01-edu/z01"
 )
 
 func main() {
-
-        for i := '0'; i <= '9'; i++ {
-                z01.PrintRune(i)
-        }
-        z01.PrintRune('\n')
+	var aRune rune
+	for aRune = 48; aRune <= 57; aRune++ {
+		z01.PrintRune(aRune)
+	}
+	z01.PrintRune('\n')
 }

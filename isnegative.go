@@ -1,10 +1,8 @@
-package main
+package psicine
 
 import ("github.com/01-edu/z01")
 
-func main() {
-	piscine.IsNegative()
-}
+
 func IsNegative(nb int) {
 
 	if nb < 0 (
@@ -15,4 +13,6 @@ func IsNegative(nb int) {
 		
 		z01.PrintRune('F')
 	}
+
+	z01.PrintRune('\n')
 }

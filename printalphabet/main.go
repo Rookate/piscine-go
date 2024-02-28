@@ -6,7 +6,7 @@ import (
 
 func main() {
 	var aRune rune
-	for aRune = 122; aRune >= 97; aRune-- {
+	for aRune = 97; aRune <= 122; aRune++ {
 		z01.PrintRune(aRune)
 	}
 	z01.PrintRune('\n')

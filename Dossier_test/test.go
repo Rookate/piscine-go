@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	piscine.PrintComb2() 
+	piscine.PrintComb() 
 }

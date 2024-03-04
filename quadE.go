@@ -38,5 +38,4 @@ func QuadE(x, y int) {
 		}
 		z01.PrintRune('\n')
 	}
-
 }

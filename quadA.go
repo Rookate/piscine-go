@@ -41,5 +41,4 @@ func QuadA(x, y int) {
 		}
 		z01.PrintRune('\n')
 	}
-
 }

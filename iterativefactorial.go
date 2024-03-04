@@ -5,7 +5,6 @@ import (
 )
 
 func IterativeFactorial(nb int) int {
-
 	z01.PrintRune(' ')
 
 	result := 1

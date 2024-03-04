@@ -6,6 +6,7 @@ func QuadA(x, y int) {
 	if x <= 0 || y <= 0 { // Si c'est un nombre négatif return rien
 		return
 	}
+
 	for j := 1; j <= y; j++ { //incrémenter la valeur de j de 1 jusqu'à sa valeur max "y"
 		for i := 1; i <= x; i++ { //incrémenter la valeur de i de 1 jusqu'à sa valeur max "x"
 

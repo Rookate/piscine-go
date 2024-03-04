@@ -8,10 +8,10 @@ func IterativeFactorial(nb int) int {
 
 	z01.PrintRune(' ')
 
-	result := 1 
+	result := 1
 
-	for i := 1; i <= nb; i++ { 
-		result = result * i 
+	for i := 1; i <= nb; i++ {
+		result = result * i
 	}
 
 	return result

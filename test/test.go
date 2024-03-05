@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.ToLower("Hello! How are you?"))
+	fmt.Println(piscine.Sqrt(4))
+	fmt.Println(piscine.Sqrt(3))
 }

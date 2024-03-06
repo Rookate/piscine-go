@@ -1,11 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
+import "piscine"
 
 func main() {
-	fmt.Println(piscine.IsPrime(5))
-	fmt.Println(piscine.IsPrime(4))
+	piscine.PrintNbrInOrder(321)
+	piscine.PrintNbrInOrder(0)
+	piscine.PrintNbrInOrder(321)
 }

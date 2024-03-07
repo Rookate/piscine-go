@@ -6,13 +6,13 @@ func SplitWhiteSpaces(s string) []string {
 	for i, ch := range s {
 		if ch == ' ' || ch == '	' || ch == '\n' {
 			if len(s[result+1:i]) > 0 {
-				if s[result+1:i] != "" {
-					tab = append(tab, s[result+1:i])
-				}
-				result = i
+				tab = append(tab, s[result+1:i])
 			}
+			result = i
 		}
 	}
-	tab = append(tab, s[result+1:])
+	if result != 0 {
+		tab = append(tab, s[result+1:])
+	}
 	return tab
 }

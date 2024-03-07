@@ -11,7 +11,7 @@ func SplitWhiteSpaces(s string) []string {
 			result = i
 		}
 	}
-	if result != 0 {
+	if result != len(s)-1 {
 		tab = append(tab, s[result+1:])
 	}
 	return tab

@@ -26,5 +26,5 @@ func main() {
 		fmt.Println(err.Error())
 		return
 	}
-	fmt.Print(string(ar))
+	fmt.Print(string(arr))
 }

@@ -1,9 +1,8 @@
 package piscine
 
-func Map(f func(int) bool, a []int) []bool {
-	mappedSlice := make([]bool, len(slice))
-	for i, v := range slice {
-		mappedSlice[i] = f(v)
+func Map(f func(int) bool, a []int) (res []bool) {
+	for i := range a {
+		res = append(res, f(i))
 	}
-	return mappedSlice
+	return res
 }

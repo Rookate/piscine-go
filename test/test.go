@@ -1,14 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"piscine"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	piscine.PrintNbr(-123)
-	piscine.PrintNbr(0)
-	piscine.PrintNbr(123)
-	z01.PrintRune('\n')
+	a := []int{1, 2, 3, 4, 5, 6}
+	result := piscine.Map(piscine.IsPrime(), a)
+	fmt.Println(result)
 }

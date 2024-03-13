@@ -1,9 +1,11 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	piscine.PrintNbrInOrder(321)
-	piscine.PrintNbrInOrder(0)
-	piscine.PrintNbrInOrder(321)
+	elems := []string{"Hello!", " How", " are", " you?"}
+	fmt.Println(piscine.BasicJoin(elems))
 }

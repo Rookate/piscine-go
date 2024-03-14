@@ -16,7 +16,6 @@ func PrintStr(s string) {
 func OpenDoor(ptrDoor *Door) {
 	PrintStr("Door Opening...")
 	ptrDoor.state = "OPEN"
-
 }
 
 func CloseDoor(ptrDoor *Door) {

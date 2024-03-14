@@ -1,11 +1,16 @@
 package main
 
 import (
-	"fmt"
 	"piscine"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
-	toConcat := []string{"Hello!", " How", " are", " you?"}
-	fmt.Println(piscine.Join(toConcat, ":"))
+	result := piscine.Rot14("Hello! How are You?")
+
+	for _, r := range result {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
 }

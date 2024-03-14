@@ -13,13 +13,18 @@ func PrintStr(s string) {
 	z01.PrintRune('\n')
 }
 
-func CloseDoor(ptrDoor *Door) bool {
-	PrintStr("Door Closing...")
-	ptrDoor.state = "CLOSE"
-	return true
+func OpenDoor(ptrDoor *Door) {
+	PrintStr("Door Opening...")
+	ptrDoor.state = "OPEN"
+
 }
 
-func OpenDoor(ptrDoor *Door) bool {
+func CloseDoor(ptrDoor *Door) {
+	PrintStr("Door Closing...")
+	ptrDoor.state = "CLOSE"
+}
+
+func IsDoorOpen(ptrDoor *Door) bool {
 	PrintStr("is the Door opened ?")
 	return ptrDoor.state == "OPEN"
 }
@@ -35,7 +40,7 @@ func main() {
 	if IsDoorClose(door) {
 		OpenDoor(door)
 	}
-	if IsDoorClose(door) {
+	if IsDoorOpen(door) {
 		CloseDoor(door)
 	}
 	if door.state == "OPEN" {

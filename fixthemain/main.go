@@ -27,6 +27,7 @@ func IsDoorClose(ptrDoor *Door) bool {
 	PrintStr("is the Door closed ?")
 	return ptrDoor.state == "CLOSE"
 }
+
 func main() {
 	door := &Door{}
 	OpenDoor(door)

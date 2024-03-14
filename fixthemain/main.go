@@ -11,11 +11,13 @@ func PrintStr(s string) {
 		z01.PrintRune(r)
 	}
 }
+
 func CloseDoor(ptrDoor *Door) bool {
 	PrintStr("Door Closing...")
 	ptrDoor.state = "CLOSE"
 	return true
 }
+
 func OpenDoor(ptrDoor *Door) bool {
 	PrintStr("is the Door opened ?")
 	return ptrDoor.state == "OPEN"

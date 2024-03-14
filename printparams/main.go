@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
-	programName := os.Args[1:]
-	for i := 0; i < len(programName); i++ {
-		arg := programName[i]
-		for _, ch := range arg {
-			z01.PrintRune(ch)
+	z := os.Args[1:]
+
+	for _, i := range z {
+		for _, r := range i {
+			z01.PrintRune(r)
 		}
 		z01.PrintRune('\n')
 	}

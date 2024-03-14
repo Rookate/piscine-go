@@ -7,16 +7,12 @@ import (
 )
 
 func main() {
-	programName := os.Args[0]
-	name := ""
-	for i := len(programName) - 1; i >= 0; i-- {
-		if programName[i] == '/' {
-			name = programName[i+1:]
-			break
+	z := os.Args[0]
+
+	for _, i := range z {
+		if i != '/' && i != '.' {
+			z01.PrintRune(i)
 		}
-	}
-	for _, ch := range name {
-		z01.PrintRune(ch)
 	}
 	z01.PrintRune('\n')
 }

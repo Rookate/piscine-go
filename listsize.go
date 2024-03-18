@@ -12,11 +12,11 @@ type List struct {
 
 func ListSize(l *List) int {
 	wagon := l.Head
-	count := 0 
+	count := 0
 
-	for _, wagon != nil {
+	for wagon != nil {
 		wagon = wagon.Next
-		count ++
+		count++
 	}
 	return count
 }

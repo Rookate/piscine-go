@@ -13,5 +13,5 @@ func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
 	if ch := BTreeSearchItem(root.Left, elem); ch != nil {
 		return ch
 	}
-	return root
+	return nil
 }

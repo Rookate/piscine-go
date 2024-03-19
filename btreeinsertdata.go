@@ -15,5 +15,4 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 		root.Right = BTreeInsertData(root.Right, data)
 	}
 	return root
-
 }

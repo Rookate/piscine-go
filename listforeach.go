@@ -3,7 +3,6 @@ package piscine
 func ListForEach(l *List, f func(*NodeL)) {
 	for ch := l.Head; ch != nil; ch = ch.Next {
 		f(ch)
-
 	}
 }
 

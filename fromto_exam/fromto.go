@@ -32,10 +32,3 @@ func FromTo(from, to int) string {
 	result += "\n"
 	return result
 }
-
-func main() {
-	print(FromTo(1, 10))
-	print(FromTo(10, 1))
-	print(FromTo(10, 10))
-	print(FromTo(100, 10))
-}

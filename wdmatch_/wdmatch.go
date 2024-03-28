@@ -19,6 +19,7 @@ func CanWrite(first, second string) bool {
 
 func trimQuotes(s string) string {
 	if len(s) >= 2 && s[0] == '"' && s[len(s)-1] == '"' {
+		// On fait len(s) - 1 car on récupère l'index du dernier caractère notre chaine. En go les indices de chaines de caractères commence à 0
 		return s[1 : len(s)-1]
 	}
 	return s
